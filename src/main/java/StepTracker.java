@@ -28,6 +28,9 @@ public class StepTracker
     for (int i = 0; i < dailySteps.size(); i++){
       sum+= dailySteps.get(i);
     }
+    if (dailySteps.size() == 0){
+      return 0;
+    }
     return sum/(double)(dailySteps.size());
   }
 } 
